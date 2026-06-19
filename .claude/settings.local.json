@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(npm install *)",
+      "PowerShell(vercel --version 2>$null)",
+      "PowerShell(if \\(-not $?\\) { \"vercel not installed\" })",
+      "PowerShell(npm install -g vercel)",
+      "PowerShell(vercel --version)",
+      "PowerShell(gh --version 2>$null)"
+    ]
+  }
+}
